@@ -2,8 +2,9 @@
 
 <div class="featured-wrapper">
 	<h2 class="featured-header">Featured Items!</h2>
-	<item-dir 	item="item"
-				ng-if="item.featured && item.inStock"
-				ng-repeat="item in items">
+	<item-dir
+				ng-repeat="item in items"
+			 	item="item"
+				ng-if="item.featured && item.inStock">
 	</item-dir>
 </div>

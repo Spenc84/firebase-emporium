@@ -5,9 +5,10 @@
 	<input ng-model="searchText.name" type="text" class="item-search">
 </div>
 
-<div class="clear"></div>
+<!-- <div class="clear"></div> -->
 
-<item-dir 	ng-repeat="item in items | filter: searchText"
+<item-dir
+    	ng-repeat="item in items | filter: searchText"
 			item="item"
 			ng-if="item.inStock">
 </item-dir>
